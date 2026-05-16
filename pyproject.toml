@@ -1,0 +1,29 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "jobscout"
+version = "0.1.0"
+description = "Personal job scout for Zhipin (BOSS直聘) — stores listings in local SQLite."
+readme = "README.md"
+requires-python = ">=3.11,<3.14"
+dependencies = [
+    "playwright>=1.44",
+    "click>=8.1",
+    "beautifulsoup4>=4.12",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0",
+]
+
+[project.scripts]
+jobscout = "jobscout.cli:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/jobscout"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

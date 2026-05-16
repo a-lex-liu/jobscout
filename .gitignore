@@ -1,0 +1,15 @@
+.venv/
+.claude/
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+*.egg-info/
+build/
+dist/
+
+# Runtime state — local-only
+data/
+
+# Captured HTML fixtures may contain personal browsing data — keep local
+tests/fixtures/*.html
