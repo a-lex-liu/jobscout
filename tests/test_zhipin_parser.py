@@ -52,7 +52,7 @@ def test_resolve_city_code_unknown_returns_none():
 def test_build_search_url_minimal():
     cfg = CrawlConfig(keyword="Python")
     url = build_search_url(cfg)
-    assert url.startswith("https://www.zhipin.com/web/geek/job?")
+    assert url.startswith("https://www.zhipin.com/web/geek/jobs?")
     assert "query=Python" in url
 
 

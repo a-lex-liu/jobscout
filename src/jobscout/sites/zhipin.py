@@ -23,7 +23,7 @@ from jobscout.sites.base import SiteCrawler
 
 
 BASE_URL = "https://www.zhipin.com"
-SEARCH_PATH = "/web/geek/job"
+SEARCH_PATH = "/web/geek/jobs"
 
 
 # Common city -> Zhipin city code. The user can also pass a raw numeric code.

@@ -7,7 +7,10 @@ from typing import Optional
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
 DATA_DIR = PROJECT_ROOT / "data"
 DB_PATH = DATA_DIR / "jobs.db"
-STORAGE_STATE_PATH = DATA_DIR / "storage_state.json"
+STORAGE_STATE_ZHIPIN = DATA_DIR / "storage_state_zhipin.json"
+STORAGE_STATE_JOBSDB = DATA_DIR / "storage_state_jobsdb.json"
+# Legacy alias kept for backward compat
+STORAGE_STATE_PATH = STORAGE_STATE_ZHIPIN
 DEBUG_HTML_DIR = DATA_DIR / "debug"
 
 # Realistic recent Chrome on Windows.
